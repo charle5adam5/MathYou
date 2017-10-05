@@ -1,19 +1,19 @@
-const first = document.getElementById("first");
-const equation = document.getElementById("equation");
-const second = document.getElementById("second");
-const answer = document.getElementById("answer");
-const submit = document.getElementById("submit");
-const result = document.getElementById("result");
-const health = document.getElementById("health");
-const points = document.getElementById("points");
+var first = document.getElementById("first");
+var equation = document.getElementById("equation");
+var second = document.getElementById("second");
+var answer = document.getElementById("answer");
+var submit = document.getElementById("submit");
+var result = document.getElementById("result");
+var health = document.getElementById("health");
+var points = document.getElementById("points");
 
-let life = 5;
+var life = 5;
 health.innerHTML = parseInt(life);
 
-let point = 0;
+var point = 0;
 points.innerHTML = parseInt(point);
 
-let operators = ["+", "-", "*", "/"];
+var operators = ["+", "-", "*", "/"];
 
 function getSign() {
 sign = operators[Math.floor(Math.random() * operators.length)];
@@ -23,8 +23,8 @@ return equation;
 getSign();
 
 function getNumbers() {
- let numberOne = Math.floor(Math.random() * 10);
- let numberTwo = Math.floor(Math.random() * 10);
+ var numberOne = Math.floor(Math.random() * 10);
+ var numberTwo = Math.floor(Math.random() * 10);
 
  first.innerHTML = numberOne;
  second.innerHTML = numberTwo;
